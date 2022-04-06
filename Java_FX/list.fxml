@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="905.0" prefWidth="1163.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Java_FX.ListController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="888.0" prefWidth="1126.0">
+         <children>
+            <Text layoutX="464.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contracsion" wrappingWidth="261.6708984375">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Button layoutX="892.0" layoutY="61.0" mnemonicParsing="false" onAction="#formScreen" prefHeight="38.0" prefWidth="180.0" text="Add" />
+            <TableView fx:id="tbView" layoutX="94.0" layoutY="215.0" prefHeight="528.0" prefWidth="1021.0">
+              <columns>
+                <TableColumn fx:id="cTen" prefWidth="500.0" text="Ten" />
+                  <TableColumn fx:id="cDienthoai" prefWidth="266.0" text="Dienthoai" />
+                  <TableColumn fx:id="cEdit" prefWidth="125.0" text="Edit" />
+                  <TableColumn fx:id="cDelete" prefWidth="129.0" text="Delete" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtSearch" layoutX="23.0" layoutY="61.0" prefHeight="31.0" prefWidth="225.0" promptText="Search" />
+            <Button layoutX="248.0" layoutY="61.0" mnemonicParsing="false" onAction="#Search" prefHeight="31.0" prefWidth="85.0" text="Search" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
